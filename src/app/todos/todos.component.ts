@@ -22,12 +22,11 @@ export class TodosComponent {
         description: this.todoDescription
       };
     this.todoList.push(newTodo);
+    this.todoTitle = '';
+    this.todoDescription = '';
   }
 
   deleteTodo(index) {
     this.todoList.splice(index, 1);
   }
-
-
-
 }
