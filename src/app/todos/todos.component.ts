@@ -1,5 +1,5 @@
 import { Component} from '@angular/core';
-import { Todo } from './todo';
+import { Todo } from './todo.model';
 
 @Component({
   selector: 'app-todos',
@@ -17,10 +17,7 @@ export class TodosComponent {
     if (!this.todoTitle) {
       return;
     }
-    const newTodo: Todo = {
-        title: this.todoTitle,
-        description: this.todoDescription
-      };
+    const newTodo = new Todo(this.todoTitle, this.todoDescription);
     this.todoList.push(newTodo);
     this.todoTitle = '';
     this.todoDescription = '';
