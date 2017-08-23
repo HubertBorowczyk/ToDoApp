@@ -7,16 +7,15 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class TodoItemComponent implements OnInit {
   @Input() todo: {title: string, description: string};
-  // @Output taskDeleted = new EventEmitter()
+  @Output() taskDeleted = new EventEmitter();
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  deleteTodo(todo) {
-    // this.todoList.splice(index, 1);
-    console.log(todo.target);
+  deleteTodo() {
+    this.taskDeleted.emit();
   }
 
 }

@@ -15,4 +15,8 @@ export class TodosComponent {
       description: todo.description
     });
   }
+
+  onTaskDeleted(index) {
+    this.todoList.splice(index, 1);
+  }
 }

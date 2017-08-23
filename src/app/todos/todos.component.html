@@ -5,6 +5,11 @@
   <div class="col-md-7">
     <p class="list_heading">Do zrobienia:</p>
     <p *ngIf="todoList.length === 0">Brak nowych zadań</p>
-    <app-todo-item *ngFor="let task of todoList" [todo] = "task"></app-todo-item>
+    <app-todo-item
+      *ngFor="let task of todoList; let i = index"
+      [todo]="task"
+      (taskDeleted)="onTaskDeleted(i)"
+    >
+    </app-todo-item>
   </div>
 </div>
