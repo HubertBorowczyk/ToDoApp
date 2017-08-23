@@ -1,0 +1,24 @@
+<form>
+  <div class="form-group">
+    <label for="todoTitle">Zadanie</label>
+    <input type="text"
+           class="form-control"
+           id="todoTitle"
+           name="title"
+           placeholder="Nazwa zadania"
+           [(ngModel)]="todoTitle">
+  </div>
+  <div class="form-group">
+    <label for="todoDescription">Opis</label>
+    <input type="text"
+           class="form-control"
+           id="todoDescription"
+           name="description"
+           placeholder="Opis zadania"
+           [(ngModel)]="todoDescription">
+  </div>
+  <button type="submit"
+          class="btn btn-primary"
+          (click)="addTodo($event)">Dodaj
+  </button>
+</form>

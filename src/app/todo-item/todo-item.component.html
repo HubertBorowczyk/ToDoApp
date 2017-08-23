@@ -1,0 +1,11 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{ todo.title }}</h3>
+    <i class="fa fa-trash-o trash" aria-hidden="true" (click)="deleteTodo($event)"></i>
+  </div>
+  <div class="panel-body">
+    <p *ngIf="todo.description === ''">Nie podano opisu</p>
+    {{ todo.description }}
+  </div>
+</div>
+

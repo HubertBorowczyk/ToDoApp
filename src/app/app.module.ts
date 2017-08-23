@@ -8,6 +8,8 @@ import {AppComponent} from './app.component';
 import {HeaderComponent} from './header/header.component';
 import {AuthorComponent} from './author/author.component';
 import { TodosComponent } from './todos/todos.component';
+import { TodoFormComponent } from './todo-form/todo-form.component';
+import { TodoItemComponent } from './todo-item/todo-item.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { TodosComponent } from './todos/todos.component';
     HeaderComponent,
     AuthorComponent,
     TodosComponent,
+    TodoFormComponent,
+    TodoItemComponent,
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

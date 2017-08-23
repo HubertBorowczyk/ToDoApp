@@ -1,21 +1,5 @@
-.todos{
-  list-style: none;
-  padding-left: 0;
+.list_heading{
+  font-weight:bold;
 }
 
-.trash{
-  font-size:2rem;
-  color:white;
-  cursor: pointer;
-}
 
-.panel-heading{
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.list__heading{
-  display:flex;
-  justify-content: space-between;
-}
